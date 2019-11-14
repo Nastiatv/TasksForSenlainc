@@ -26,5 +26,4 @@ public static void main(String[] args) {
 	                    }
 	                else {System.out.println("mistake! You entered not a integer");
 	                }
-	                }
-	                }
+	                }}
