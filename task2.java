@@ -1,11 +1,12 @@
 import java.util.Scanner;
-public class task2 {
+public class Task2 {
 
 	/*Создать программу, которая будет вычислять и выводить на экран НОК (наименьшее общее кратное) и НОД (наибольший общий делитель)
 	 *  двух целых чисел, введенных пользователем. 
 	Если пользователь некорректно введёт хотя бы одно из чисел, то сообщать об ошибке.*/
 
 	
+@SuppressWarnings("resource")
 public static void main(String[] args) {
 	 System.out.println("Insert first number");
 	 Scanner scan1 = new Scanner(System.in);

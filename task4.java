@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class task4 {
+public class Task4 {
 
-	/*Создать программу, которая подсчитывает сколько раз употребляется слово в тексте (без учета регистра). Текст и слово вводится вручную.*/
+/*Создать программу, которая подсчитывает сколько раз употребляется слово в тексте (без учета регистра). Текст и слово вводится вручную.*/
 
 	
-	
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		 System.out.println("Insert text:");
-		 Scanner scan = new Scanner(System.in);
+		 @SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
 		 String text=scan.nextLine();
 		 System.out.println("Insert word:");
 		 String word=scan.nextLine();
@@ -19,10 +19,9 @@ public class task4 {
         String[] arraySentence = text.replaceAll("[!.,&^%$#@*(?)]"," ").toLowerCase().split(" ");
         word = word.toLowerCase().trim();
         int counter = 0;
-        for (String x : arraySentence) {
-            if (x.equals(word)) {
+        	for (String x : arraySentence) {
+        		if (x.equals(word)) {
                 counter++;
-            }
-        }
+        		}}
         System.out.println("Number of repetitions: " + counter);
     }}

@@ -1,13 +1,12 @@
 import java.util.Scanner;
-public class task1 {
+public class Task1 {
+	
+	/*Создать программу, которая будет сообщать, является ли целое число, введенное пользователем, чётным или нечётным, 
+	простым или составным.  Если пользователь введёт не целое число, то сообщать ему об ошибке.*/
 
 public static void main(String[] args) {
 		
-
-			/*Создать программу, которая будет сообщать, является ли целое число, введенное пользователем, чётным или нечётным, 
-			простым или составным.  Если пользователь введёт не целое число, то сообщать ему об ошибке.*/
-
-			
+			@SuppressWarnings("resource")
 			Scanner scan= new Scanner(System.in);
 	        System.out.println("Insert the number");
 	                if (scan.hasNextInt()) {
@@ -22,7 +21,7 @@ public static void main(String[] args) {
 	                    String a = (n!=0 ? "The number is composite and " : "The number is prime and ");
                         System.out.print(a);	
 	                    
-	                    	String b = (num%2==0 ? "even" : "odd");
+	                    String b = (num%2==0 ? "even" : "odd");
 	                        System.out.print(b);
 	                    }
 	                else {System.out.println("mistake! You entered not a integer");
