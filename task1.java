@@ -13,6 +13,7 @@ public class Task1 {
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Insert the number");
+		
 		if (scan.hasNextInt()) {
 			int num = scan.nextInt();
 			int n = 0;
@@ -29,6 +30,7 @@ public class Task1 {
 			System.out.print(b);
 		} else {
 			System.out.println("mistake! You entered not a integer");
+			
 		}
 	}
 }

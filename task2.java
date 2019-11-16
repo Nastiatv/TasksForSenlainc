@@ -14,13 +14,12 @@ public class Task2 {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		System.out.println("Insert first number");
-		Scanner scan1 = new Scanner(System.in);
-		if (scan1.hasNextInt()) {
-			int first = scan1.nextInt();
+		Scanner scan = new Scanner(System.in);
+		if (scan.hasNextInt()) {
+			int first = scan.nextInt();
 			System.out.println("Insert second number");
-			Scanner scan2 = new Scanner(System.in);
-			if (scan2.hasNextInt()) {
-				int second = scan2.nextInt();
+			if (scan.hasNextInt()) {
+				int second = scan.nextInt();
 
 				System.out.println("NOD=" + countNOD(first, second));
 				System.out.println("NOK=" + countNOÊ(first, second));
@@ -28,9 +27,11 @@ public class Task2 {
 			} else {
 				System.out.println(eror);
 			}
-		} else {
+					} else {
 			System.out.println(eror);
 		}
+		
+
 	}
 
 	private static int countNOÊ(int one, int two) {

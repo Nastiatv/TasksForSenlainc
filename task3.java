@@ -16,6 +16,7 @@ public class Task3 {
 		countWords(str);
 		sortArr(str);
 		firstLetterUp(str);
+	
 	}
 
 	private static void countWords(String a) {
