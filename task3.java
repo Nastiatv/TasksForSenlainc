@@ -32,7 +32,7 @@ public class Task3 {
 	}
 
 	public static String[] stringToArr(String a) {
-		String[] strAsArr = a.trim().split(" ");
+		String[] strAsArr = a.trim().replaceAll("[!.,?]", "").split(" ");
 		return strAsArr;
 	}
 
