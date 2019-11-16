@@ -14,16 +14,12 @@ public class Check {
 		List<Stuff> stuffList = new ArrayList<Stuff>();
 		
 		
-		Stuff phone = new Stuff(1, 100);
-		stuffList.add(phone);
-		Stuff laptop = new Stuff(4, 200);
-		stuffList.add(laptop);
-		Stuff key = new Stuff(3, 200);
-		stuffList.add(key);
-		Stuff books = new Stuff(3, 50);
-		stuffList.add(books);
-		Stuff food = new Stuff(2, 20);
-		stuffList.add(food);
+		stuffList.add(new Stuff("phone", 1, 100));
+		stuffList.add(new Stuff("laptop", 4, 200));
+		stuffList.add(new Stuff("key", 3, 200));
+		stuffList.add(new Stuff("books", 3, 50));
+		stuffList.add(new Stuff("food", 2, 20));
+	
 		firstBag.setStuffList(stuffList);
 
 		firstBag.packBag(firstBag.getStuffList());

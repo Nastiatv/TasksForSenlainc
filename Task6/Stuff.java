@@ -7,6 +7,15 @@ public class Stuff {
 
 	private int weight;
 	private int value;
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public int getWeight() {
 		return weight;
@@ -24,9 +33,10 @@ public class Stuff {
 		this.value = value;
 	}
 
-	public Stuff(int w, int v) {
+	public Stuff(String name, int w, int v) {
 		this.weight = w;
 		this.value = v;
+		this.name=name;
 
 	}
 }
