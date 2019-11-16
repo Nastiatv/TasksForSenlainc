@@ -1,6 +1,7 @@
 package Task6;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Check {
 
@@ -8,8 +9,12 @@ public class Check {
 
 		Bag firstBag = new Bag(10);
 
+		
+		
+		List<Stuff> stuffList = new ArrayList<Stuff>();
+		
+		
 		Stuff phone = new Stuff(1, 100);
-		ArrayList<Stuff> stuffList = new ArrayList<Stuff>();
 		stuffList.add(phone);
 		Stuff laptop = new Stuff(4, 200);
 		stuffList.add(laptop);
