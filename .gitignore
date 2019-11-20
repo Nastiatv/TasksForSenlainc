@@ -1,0 +1,9 @@
+
+.project
+Task3.class
+bin/Task2.class
+bin/Task1.class
+bin/Task4.class
+bin/Task5.class
+bin/Task6/Bag.class
+*.class
