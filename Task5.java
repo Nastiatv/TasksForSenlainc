@@ -10,13 +10,13 @@ public class Task5 {
 
 	public static void main(String[] args) {
 		System.out.println("Insert number from 0 to 100 ");
-		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		int num = scan.nextInt();
 		if (num > 100) {
 			System.out.println("The length of the sequence must not exceed 100");
 		}
-		printPalindromeNumbers(num);
+		printPalindromeNumbersbefore(num);
+		scan.close();
 	}
 
 	public static boolean isPalindrome(String number) {
@@ -25,7 +25,7 @@ public class Task5 {
 		return number.equalsIgnoreCase(reverseToString);
 	}
 
-	public static void printPalindromeNumbers(int num) {
+	public static void printPalindromeNumbersbefore(int num) {
 		for (int i = 0; i < num; i++) {
 			if (isPalindrome(String.valueOf(i))) {
 				System.out.println(i);
