@@ -14,14 +14,15 @@ public class Task4 {
 		System.out.println("Insert word:");
 		String word = scan.nextLine();
 		printWordCounter(text, word);
+		scan.close();
 	}
 
 	public static void printWordCounter(String text, String word) {
 		String[] arraySentence = text.replaceAll("[!.,&^%$#@*(?)]", " ").toLowerCase().split(" ");
 		word = word.toLowerCase().trim();
 		int counter = 0;
-		for (String x : arraySentence) {
-			if (x.equals(word)) {
+		for (String words : arraySentence) {
+			if (words.equals(word)) {
 				counter++;
 			}
 		}
