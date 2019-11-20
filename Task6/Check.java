@@ -24,8 +24,8 @@ public class Check {
 
 	System.out.println("Current Weight: "+firstBag.getCurrentWeight());
 	System.out.println("Stuff in Bag:");
-	for(Stuff i:firstBag.getStuffInBag()) {
-		System.out.println("-"+i.getName()+" , value: "+i.getValue());
+	for(Stuff stuff:firstBag.getStuffInBag()) {
+		System.out.println("-"+stuff.getName()+" , value: "+stuff.getValue());
 	}
 		
 	}
