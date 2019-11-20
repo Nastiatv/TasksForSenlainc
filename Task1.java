@@ -1,7 +1,7 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task1 {
-
 	/*
 	 * Создать программу, которая будет сообщать, является ли целое число, введенное
 	 * пользователем, чётным или нечётным, простым или составным. Если пользователь
@@ -10,11 +10,9 @@ public class Task1 {
 
 	public static void main(String[] args) {
 
-		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Insert the number");
-		
-		if (scan.hasNextInt()) {
+		try {
 			int num = scan.nextInt();
 			int n = 0;
 
@@ -28,9 +26,10 @@ public class Task1 {
 
 			String b = (num % 2 == 0 ? "even" : "odd");
 			System.out.print(b);
-		} else {
+
+			scan.close();
+		} catch (InputMismatchException e) {
 			System.out.println("mistake! You entered not a integer");
-			
 		}
 	}
 }
