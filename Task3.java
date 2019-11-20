@@ -9,10 +9,10 @@ import java.util.Scanner;
 public class Task3 {
 
 	public static void main(String[] args) {
-		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Insert Sentense:");
 		String str = scan.nextLine();
+		scan.close();
 		countWords(str);
 		sortArr(str);
 		firstLetterUp(str);
@@ -22,8 +22,8 @@ public class Task3 {
 	private static void countWords(String a) {
 		String strAsArr[] = stringToArr(a);
 		int n = 0;
-		for (String i : strAsArr) {
-			String k = i;
+		for (String word : strAsArr) {
+			String k = word;
 			if (k.length() != 0) {
 				n++;
 			}
@@ -38,10 +38,8 @@ public class Task3 {
 
 	public static void firstLetterUp(String a) {
 		String strAsArr[] = stringToArr(a);
-		System.out.println(" ");
-		System.out.println("First letter up: ");
-		for (String i : strAsArr) {
-			String word = i;
+		System.out.println("\nFirst letter up: ");
+		for (String word : strAsArr) {
 			if (word.length() != 0) {
 				System.out.print(word.substring(0, 1).toUpperCase() + word.substring(1) + " ");
 			}
@@ -52,8 +50,8 @@ public class Task3 {
 		String strAsArr[] = stringToArr(a);
 		System.out.println("Sorted:");
 		Arrays.sort(strAsArr);
-		for (String i : strAsArr) {
-			System.out.print(i + "  ");
+		for (String word : strAsArr) {
+			System.out.print(word + "  ");
 		}
 	}
 }

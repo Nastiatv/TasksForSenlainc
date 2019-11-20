@@ -9,7 +9,6 @@ public class Task4 {
 
 	public static void main(String[] args) {
 		System.out.println("Insert text:");
-		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		String text = scan.nextLine();
 		System.out.println("Insert word:");
