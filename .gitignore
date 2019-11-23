@@ -7,3 +7,4 @@ bin/Task4.class
 bin/Task5.class
 bin/Task6/Bag.class
 *.class
+/bin/
