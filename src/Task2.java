@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class Task2 {
 	/*
-	 * Создать программу, которая будет вычислять и выводить на экран НОК
-	 * (наименьшее общее кратное) и НОД (наибольший общий делитель) двух целых
-	 * чисел, введенных пользователем. Если пользователь некорректно введёт хотя бы
-	 * одно из чисел, то сообщать об ошибке.
+	 * Г‘Г®Г§Г¤Г ГІГј ГЇГ°Г®ГЈГ°Г Г¬Г¬Гі, ГЄГ®ГІГ®Г°Г Гї ГЎГіГ¤ГҐГІ ГўГ»Г·ГЁГ±Г«ГїГІГј ГЁ ГўГ»ГўГ®Г¤ГЁГІГј Г­Г  ГЅГЄГ°Г Г­ ГЌГЋГЉ
+	 * (Г­Г ГЁГ¬ГҐГ­ГјГёГҐГҐ Г®ГЎГ№ГҐГҐ ГЄГ°Г ГІГ­Г®ГҐ) ГЁ ГЌГЋГ„ (Г­Г ГЁГЎГ®Г«ГјГёГЁГ© Г®ГЎГ№ГЁГ© Г¤ГҐГ«ГЁГІГҐГ«Гј) Г¤ГўГіГµ Г¶ГҐГ«Г»Гµ
+	 * Г·ГЁГ±ГҐГ«, ГўГўГҐГ¤ГҐГ­Г­Г»Гµ ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГҐГ¬. Г…Г±Г«ГЁ ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гј Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г® ГўГўГҐГ¤ВёГІ ГµГ®ГІГї ГЎГ»
+	 * Г®Г¤Г­Г® ГЁГ§ Г·ГЁГ±ГҐГ«, ГІГ® Г±Г®Г®ГЎГ№Г ГІГј Г®ГЎ Г®ГёГЁГЎГЄГҐ.
 	 */
 
 	public static void main(String[] args) {
@@ -16,16 +16,17 @@ public class Task2 {
 			int first = scan.nextInt();
 			System.out.println("Insert second number");
 			int second = scan.nextInt();
-			scan.close();
 			System.out.println("NOD=" + countNOD(first, second));
-			System.out.println("NOK=" + countNOК(first, second));
+			System.out.println("NOK=" + countNOГЉ(first, second));
 
 		} catch (InputMismatchException e) {
 			System.out.println("mistake! You entered not a integer");
+		} finally {
+			scan.close();
 		}
 	}
 
-	private static int countNOК(int one, int two) {
+	private static int countNOГЉ(int one, int two) {
 		int i = 0;
 		for (i = one + 1;; i++) {
 			if (i % one == 0 && i % two == 0) {
