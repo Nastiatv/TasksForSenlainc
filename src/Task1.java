@@ -31,10 +31,11 @@ public class Task1 {
 			int num = scan.nextInt();
 			compositeOrPrime(num);
 			evenOrOdd(num);
-			scan.close();
-
 		} catch (InputMismatchException e) {
 			System.out.println("mistake! You entered not a integer");
+		} finally {
+			scan.close();
 		}
+
 	}
 }
