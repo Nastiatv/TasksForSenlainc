@@ -2,12 +2,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task2 {
-	/*
-	 * Ñîçäàòü ïðîãðàììó, êîòîðàÿ áóäåò âû÷èñëÿòü è âûâîäèòü íà ýêðàí ÍÎÊ
-	 * (íàèìåíüøåå îáùåå êðàòíîå) è ÍÎÄ (íàèáîëüøèé îáùèé äåëèòåëü) äâóõ öåëûõ
-	 * ÷èñåë, ââåäåííûõ ïîëüçîâàòåëåì. Åñëè ïîëüçîâàòåëü íåêîððåêòíî ââåä¸ò õîòÿ áû
-	 * îäíî èç ÷èñåë, òî ñîîáùàòü îá îøèáêå.
-	 */
 
 	public static void main(String[] args) {
 		System.out.println("Insert first number");
